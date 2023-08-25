@@ -71,6 +71,7 @@
         android:orientation="vertical">
         <com.google.android.material.button.MaterialButton
             android:layout_width="match_parent"
+            android:backgroundTint="#A9907E"
             android:layout_height="@dimen/_50sdp"
             android:layout_marginHorizontal="@dimen/_20sdp"
             app:cornerRadius="@dimen/_10sdp"
@@ -82,6 +83,7 @@
             android:layout_marginHorizontal="@dimen/_20sdp"
             app:cornerRadius="@dimen/_10sdp"
             android:text="Kembali ke Menu"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
             android:id="@+id/btn_back_menu"/>
     </LinearLayout>
 

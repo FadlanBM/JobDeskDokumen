@@ -8,13 +8,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_20sdp"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginHorizontal="@dimen/_20sdp"
+        android:layout_marginBottom="@dimen/_10sdp"
         android:id="@+id/liner1"
         android:orientation="horizontal">
 
         <ImageView
             android:id="@+id/btn_back"
-            android:layout_width="35dp"
+            android:layout_width="30dp"
             android:layout_height="@dimen/_30sdp"
             android:src="@drawable/baseline_arrow_back_24" />
         <TextView
@@ -24,14 +26,14 @@
             android:paddingTop="@dimen/_5sdp"
             android:paddingStart="@dimen/_20sdp"
             android:fontFamily="@font/poppinsbold"
-            android:textSize="@dimen/_15sdp"/>
+            android:textSize="@dimen/_14sdp"/>
     </LinearLayout>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:layout_marginHorizontal="@dimen/_20sdp"
-        android:layout_marginTop="@dimen/_20sdp"
+        android:id="@+id/liner2"
         android:layout_below="@+id/liner1">
         <TextView
             android:layout_width="wrap_content"
@@ -192,6 +194,7 @@
             android:layout_marginHorizontal="@dimen/_20sdp"
             android:layout_height="@dimen/_50sdp"
             app:cornerRadius="@dimen/_10sdp"
+            android:backgroundTint="#A9907E"
             android:text="Konfirmasi Dokumen"
             android:id="@+id/btn_konfirmasi"/>
 

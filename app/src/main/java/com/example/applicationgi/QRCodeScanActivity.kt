@@ -1,6 +1,7 @@
 package com.example.applicationgi
 
 import android.app.Activity
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.activity.result.contract.ActivityResultContracts
@@ -16,8 +17,16 @@ class QRCodeScanActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding= ActivityQrcodeScanBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        supportActionBar?.hide()
+
         binding.imageProfile.setOnClickListener{
             picimage()
+        }
+        binding.btnBackMenu.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+        binding.btnScanQr.setOnClickListener {
+            startActivity(Intent(this,ListDataActivity::class.java))
         }
     }
 

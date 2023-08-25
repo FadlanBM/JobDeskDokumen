@@ -14,7 +14,7 @@ class LoginActivity : AppCompatActivity() {
         setContentView(binding.root)
         supportActionBar?.hide()
 
-        binding.btnTologin.setOnClickListener{
+        binding.btnToregister.setOnClickListener{
             startActivity(Intent(this,RegisterActivity::class.java))
         }
         binding.btnLogin.setOnClickListener {
